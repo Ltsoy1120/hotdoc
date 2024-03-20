@@ -3,6 +3,10 @@
 .tabs {
   width: 100%;
 
+  .MuiTabs-flexContainer {
+    gap: 30px;
+  }
+
   .MuiTabs-root {
     border-bottom: 1px solid $color-gray-200;
     .MuiTab-root {
