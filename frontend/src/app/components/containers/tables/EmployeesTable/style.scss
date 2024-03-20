@@ -1,0 +1,60 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.employees-table {
+  @include Table;
+
+  .employee-info {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      @include Typography($font-size-4, 600, $color-black);
+    }
+    span {
+      @include Typography($font-size-4, 400, $color-gray-500);
+    }
+  }
+
+  .employee-role {
+    .icon {
+      margin-right: 10px;
+      stroke: $color-gray-500;
+    }
+
+    span {
+      @include Typography($font-size-4, 400, $color-black);
+    }
+  }
+
+  .badge {
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    &.blue {
+      color: $color-blue-dark;
+      background-color: $color-blue-light;
+    }
+
+    &.black {
+      color: $color-black;
+      background-color: $color-gray-300;
+    }
+  }
+}
+
+.employees-menu {
+  &.css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root {
+    left: -30px;
+
+    li {
+      @include Typography($font-size-4, 400, $color-gray-700);
+    }
+
+    li:last-child {
+      color: $color-red;
+    }
+  }
+}

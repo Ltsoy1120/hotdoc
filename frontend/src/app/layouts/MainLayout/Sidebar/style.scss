@@ -1,0 +1,47 @@
+@import "../../../assets/scss/bundle.scss";
+
+.sidebar {
+  width: $drawerWidth;
+  flex-shrink: 0;
+
+  .MuiDrawer-paper {
+    width: $drawerWidth;
+    box-sizing: border-box;
+  }
+
+  .menuItem {
+    .MuiTypography-root {
+      @include Typography($font-size-4, 600, $color-gray-500);
+    }
+
+    .MuiListItemButton-root {
+      align-items: center;
+      padding: 5px 12px;
+    }
+
+    .MuiListItemButton-root:hover {
+      background-color: $color-orange-50;
+    }
+
+    .active {
+      background-color: $color-orange-50;
+      border-radius: 6px;
+      .MuiTypography-root {
+        @include Typography($font-size-4, 600, $color-orange-600);
+      }
+      .icon {
+        stroke: $color-orange-600;
+      }
+    }
+
+    .icon {
+      stroke: $color-gray-500;
+    }
+
+    .submenuItem {
+      .MuiTypography-root {
+        font-weight: 400;
+      }
+    }
+  }
+}

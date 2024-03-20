@@ -1,0 +1,15 @@
+@import "../../../../../assets/scss/bundle.scss";
+
+.identificator-form {
+  margin-top: 15px;
+  a {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @include AuthButton;
+
+  .MuiButtonBase-root {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../../../../assets/scss/bundle.scss";
+
+.ecp-confirmation-form {
+  margin-top: 15px;
+
+  @include AuthButton;
+
+  .MuiButtonBase-root {
+    margin-bottom: 8px;
+  }
+}

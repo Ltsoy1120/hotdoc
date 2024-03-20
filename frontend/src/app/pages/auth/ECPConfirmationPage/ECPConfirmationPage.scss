@@ -1,0 +1,19 @@
+@import "../../../assets/scss/bundle.scss";
+
+.ecp-confirmation {
+  height: 450px;
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__text {
+    font-size: 16px;
+  }
+
+  @include AuthButton;
+  .MuiButton-contained {
+    margin-bottom: 8px;
+  }
+  @include OutlinedButton;
+}

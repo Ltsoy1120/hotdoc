@@ -1,0 +1,40 @@
+@import "../../../assets/scss/bundle.scss";
+
+.edit-profile-page {
+  @include Form;
+
+  label {
+    span {
+      @include Typography($font-size-5, 400, $color-gray-400);
+    }
+  }
+
+  hr {
+    border: 1px solid $color-gray-200;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .input-fields {
+    width: 75%;
+    max-width: 600px;
+    display: flex;
+    gap: 10px;
+
+    .MuiFormControl-root {
+      width: 100%;
+    }
+
+    .MuiAvatar-root {
+      width: 120px;
+      height: 120px;
+      @include Typography(48px, 600, $color-orange-600);
+      background-color: $color-orange-50;
+      border: 4px solid$color-white;
+    }
+
+    .MuiBox-root {
+      flex-grow: 1;
+    }
+  }
+}

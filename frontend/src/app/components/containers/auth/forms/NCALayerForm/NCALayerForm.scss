@@ -1,0 +1,24 @@
+@import "../../../../../assets/scss/bundle.scss";
+
+.ncalayer {
+  margin-top: 32px;
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8px;
+      span {
+        @include Typography($font-size-4, 400, $color-black);
+        line-height: 20px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  @include AuthButton;
+  .MuiButton-contained {
+    margin-bottom: 8px;
+  }
+}

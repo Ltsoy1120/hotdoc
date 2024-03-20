@@ -1,0 +1,28 @@
+.modal {
+  .MuiPaper-root {
+    padding: 24px;
+    gap: 5px;
+
+    h2 {
+      padding: 0;
+    }
+  }
+
+  .MuiDialogContent-root {
+    padding: 0;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .MuiDialogActions-root {
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 0 0;
+
+    button {
+      width: 50%;
+    }
+  }
+}

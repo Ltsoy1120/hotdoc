@@ -1,0 +1,21 @@
+@import "../../../assets/scss/bundle.scss";
+
+.sign-in-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .sign-in {
+    padding: 40px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  button {
+    padding: 0;
+  }
+  .sign-in__registration {
+    text-align: center;
+    margin-top: 32px;
+  }
+  @include OutlinedButton;
+}

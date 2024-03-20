@@ -1,0 +1,21 @@
+@import "../../../assets/scss/bundle.scss";
+
+.new-document-page {
+  @include Form;
+
+  button {
+    margin-left: auto;
+    display: block;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+
+    hr {
+      border: 1px solid $color-gray-200;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+}

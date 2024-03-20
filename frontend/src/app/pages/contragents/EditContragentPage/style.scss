@@ -1,0 +1,25 @@
+@import "../../../assets/scss/bundle.scss";
+
+.edit-contragent-page {
+  @include Form;
+
+  .input-info-box {
+    width: 75%;
+
+    .MuiFormControl-root {
+      width: 100%;
+    }
+
+    .identificator-info {
+      gap: 100px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .success {
+      color: $color-green;
+    }
+  }
+}

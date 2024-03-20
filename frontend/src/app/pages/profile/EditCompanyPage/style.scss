@@ -1,0 +1,19 @@
+@import "../../../assets/scss/bundle.scss";
+
+.edit-company-page {
+  @include Form;
+
+  hr {
+    border: 1px solid $color-gray-200;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .input-box {
+    .MuiBox-root {
+      width: 75%;
+      display: flex;
+      gap: 10px;
+    }
+  }
+}

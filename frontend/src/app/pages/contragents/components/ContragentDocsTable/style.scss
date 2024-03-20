@@ -1,0 +1,45 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.contrgent-docs-table {
+  @include Table;
+
+  .docs-info {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      @include Typography($font-size-4, 600, $color-black);
+    }
+    span {
+      @include Typography($font-size-4, 400, $color-gray-500);
+    }
+  }
+
+  .badge {
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    &.create {
+      color: $color-indigo;
+      background-color: $color-indigo-light;
+    }
+
+    &.onSign {
+      color: $color-blue-dark;
+      background-color: $color-blue-light;
+    }
+
+    &.awaitingApproval {
+      color: $color-orange-600;
+      background-color: $color-orange-50;
+    }
+
+    &.signed {
+      color: $color-green;
+      background-color: $color-green-light;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../assets/scss/bundle.scss";
+
+.tabs {
+  width: 100%;
+
+  .MuiTabs-root {
+    border-bottom: 1px solid $color-gray-200;
+    .MuiTab-root {
+      color: $color-gray-500;
+      text-transform: none;
+      padding: 0;
+
+      &.Mui-selected {
+        color: $color-orange-600;
+      }
+    }
+  }
+
+  .MuiTabs-indicator {
+    background-color: $color-orange-600;
+
+    .MuiTabs-flexContainer {
+      gap: 20px;
+    }
+  }
+}

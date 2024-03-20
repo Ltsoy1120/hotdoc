@@ -1,0 +1,20 @@
+@import "../../../assets/scss/bundle.scss";
+
+.identificator-info {
+  display: flex;
+  gap: 50px;
+  &__item {
+    margin-bottom: 20px;
+  }
+  span {
+    @include Typography($font-size-5, 400, $color-gray-500);
+    line-height: 18px;
+  }
+  p {
+    color: $color-black;
+    font-weight: 500;
+  }
+  button {
+    margin-top: 25px;
+  }
+}

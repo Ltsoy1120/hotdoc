@@ -1,0 +1,87 @@
+{
+  "auth": {
+    "background": {
+      "title": "Sign and save documents",
+      "subtitle": "DATcom - это сервис по подписанию документов, которому доверяете.",
+      "checkbox1": "Не бойтесь, это реально законно, потому что по статье такой то - вы можете подписывать документы онлайн через ЭЦП",
+      "checkbox2": "С помощью этого сервиса вы можете избавиться от бумаг в своей работе",
+      "checkbox3": "Больше вы можете не тратиться на курьеров и устанавливать законные взаимоотношения с клиентами",
+      "mobileInfo": "В мобильном приложении удобней. Ваши документы всегда под рукой!",
+      "scanQR": "Сканировать QR код",
+      "downloadApp": "Скачайте приложения использую сканер телефона",
+      "scanQRForApp": "Отсканируйте QR код чтобы скачать мобильное приложения"
+    },
+    "register": {
+      "signUp": "Register",
+      "physicalPerson": "Физическое лицо",
+      "juridicalPerson": "Юридическое лицо",
+      "enterEmail": "Enter E-mail",
+      "phoneNumber": "Phone number",
+      "enterYourIIN": "Enter your IIN",
+      "enterYourBIN": "Enter your BIN",
+      "iin": "IIN",
+      "fullName": "Ф.И.О",
+      "companyName": "Наименование компании",
+      "companyBinIin": "БИН/ИИН компании",
+      "completeReq": "Обязательно для заполнения",
+      "boss": "Руководитель",
+      "bossIin": "ИИН руководителя",
+      "registerBtn": "Register",
+      "alreadyHaveAccount": "Уже есть аккаунт?",
+      "signIn": "Sign in"
+    },
+    "login": {
+      "signInAccount": "Войти в аккаунт",
+      "throughECP": "Через ЭЦП",
+      "iinBin": "ИИН/БИН",
+      "enterIinBin": "Введите ИИН/БИН",
+      "enterPass": "Введите пароль",
+      "forgotPass": "Я забыл пароль",
+      "uploadECP": "Загрузите ЭЦП чтобы подтвердить свой аккаунт.",
+      "chooseCertificate": "Выберите сертификат",
+      "signInBtn": "Sign in",
+      "signInAsEmployee": "Sign in as employee",
+      "help": "Помощь",
+      "dontHaveAccount": "У вас нет аккаунта?",
+      "signUp": "Register"
+    },
+    "newPassword": {
+      "newPassword": "Новый пароль",
+      "createPass": "Добро пожаловать, {{userName}}! Придумайте пароль для своего аккаунта.",
+      "repeatPass": "Повторите пароль",
+      "passRequirements": "Новый пароль должен содержать:",
+      "reqPassLength": "Как минимум {{length}} символов",
+      "reqPassIncludeNum": "Содержать минимум одну цифру",
+      "reqPassIncludeChar": "Содержать минимум одну буквку верхнего и нижнего регистра",
+      "reqPassMustMatch": "Новый и повторный пароль должен совпадать",
+      "saveBtn": "Сохранить"
+    },
+    "codeConfirmation": {
+      "confirmation": "Подтверждение",
+      "enterCode": "Мы отправили на вашу почту {{email}} код для подтверждения. Введите его ниже",
+      "confirmBtn": "Подтвердить",
+      "codeTimer": "Вы можете заново отправить код через:",
+      "didNotReceiveCode": "Не пришел код?",
+      "sendAgain": "Отправить заново"
+    },
+    "ecpConfirmation": {
+      "confirmation": "Подтверждение",
+      "uploadECP": "Загрузите ЭЦП чтобы подтвердить свой аккаунт.",
+      "chooseCertificate": "Выберите сертификат",
+      "isNotRunNCALayer": "У вас не запущен NCALayer",
+      "isRunNCALayer": "Убедитесь что программа NCALayer ",
+      "downloadNCALayer": "Скачайте NCALayer здесь:",
+      "runNCALayerBtn": "Я запустил NCALayer",
+      "help": "Помощь"
+    },
+    "success": {
+      "yourAccountConfirmed": "Ваш аккаунт подтвержден",
+      "youCanStartUsing": "Вы можете начать пользоваться нашим сервисом как Физическое лицо. Введите его ниже",
+      "signInBtn": "Войти"
+    },
+    "footer": {
+      "help": "Помощь",
+      "allRightsReserved": "Все права защищены"
+    }
+  }
+}

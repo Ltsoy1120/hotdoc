@@ -1,0 +1,40 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.contragents-table {
+  @include Table;
+
+  .statuses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      font-size: 12px;
+    }
+
+    .status-marker {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    .create {
+      background-color: $color-indigo;
+    }
+
+    .onSign {
+      background-color: $color-blue;
+    }
+
+    .awaitingApproval {
+      background-color: $color-orange-600;
+    }
+
+    .signed {
+      background-color: $color-green-dark;
+    }
+  }
+}

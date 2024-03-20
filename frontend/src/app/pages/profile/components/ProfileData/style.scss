@@ -1,0 +1,33 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.profile-data {
+  padding: 20px;
+
+  hr {
+    margin: 15px 0;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+
+  .data-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    h6 {
+      color: $color-black;
+    }
+
+    p {
+      @include Typography($font-size-2, 500, $color-gray-400);
+    }
+
+    p:first-child {
+      @include Typography($font-size-4, 500, $color-gray-700);
+      margin-right: 30px;
+      width: 220px;
+    }
+  }
+}

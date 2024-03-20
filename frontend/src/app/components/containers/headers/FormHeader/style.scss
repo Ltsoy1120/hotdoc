@@ -1,0 +1,36 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.form-header {
+  &.MuiAppBar-root {
+    background-color: $color-white;
+    width: calc(100% - $drawerWidth);
+    color: $color-black;
+    height: $headerHeight;
+  }
+
+  .MuiToolbar-root {
+    display: flex;
+    justify-content: space-between;
+
+    .MuiBox-root:first-child {
+      display: flex;
+      align-items: center;
+    }
+
+    h6 {
+      font-size: 18px;
+    }
+  }
+
+  .subtitle {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $color-gray-500;
+    gap: 10px;
+
+    a {
+      text-decoration: "underline";
+    }
+  }
+}

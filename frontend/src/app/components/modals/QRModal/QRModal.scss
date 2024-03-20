@@ -1,0 +1,31 @@
+@import "../../../assets/scss/bundle.scss";
+
+.qr-modal {
+  .MuiDialog-paper {
+    max-width: 400px;
+    align-items: center;
+    padding: 0 0 16px 0;
+    border-radius: $border-radius;
+  }
+  h2,
+  p {
+    text-align: center;
+  }
+  h2 {
+    @include Typography(20px, 700, $color-black);
+    line-height: 30px;
+  }
+  p {
+    @include Typography(14px, 400, $color-gray-500);
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+  .qr {
+    background: $color-gray-50;
+    border-radius: $border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+}

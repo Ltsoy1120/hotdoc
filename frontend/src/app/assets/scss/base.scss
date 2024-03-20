@@ -1,0 +1,144 @@
+@import "bundle.scss";
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px/1 "Inter", "Arial", sans-serif;
+  color: $color-black;
+  overflow-y: scroll;
+  margin: unset;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+/* Headings */
+
+h1 {
+  @include Typography(40px, 400, white);
+  line-height: 40px;
+  letter-spacing: -1.2px;
+  @include DesktopLarge {
+    @include Typography(60px, 400, white);
+    line-height: 70px;
+    letter-spacing: -1.2px;
+  }
+}
+
+h2 {
+  @include Typography(30px, 500, $color-black);
+}
+
+h3 {
+  @include Typography($font-size-1, 500, $color-black);
+}
+
+h4 {
+  @include Typography($font-size-2, 500, $color-black);
+}
+
+/* Text */
+
+p {
+  font-size: $font-size-4;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+/* Anchor */
+
+a {
+  @include Typography($font-size-4, 400, $color-link);
+  word-break: normal;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* UX */
+
+input,
+button,
+textarea {
+  all: unset;
+  position: relative;
+}
+
+input {
+  cursor: revert;
+}
+
+//убрать стрелки в input[type="number"] во всех браузерах
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+button,
+textarea {
+  &:focus-visible {
+    outline: revert;
+  }
+}
+
+button {
+  cursor: pointer;
+  transition: 100ms ease opacity;
+  border-radius: $border-radius;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):active {
+    opacity: 0.75;
+  }
+}
+
+/* Material UI - Link */
+
+.MuiLink-root {
+  text-decoration: none !important;
+  color: $color-link !important;
+}
+
+.MuiFormHelperText-root.Mui-error {
+  color: $color-red !important;
+}
+
+/* Material UI - Button */
+
+.MuiButtonBase-root {
+  text-transform: none !important;
+}
+
+.page-wrapper {
+  min-height: 100svh;
+  height: max-content;
+  display: flex;
+  flex-grow: 1;
+}
+
+.page-inner {
+  flex-grow: 1;
+  background-color: #f9fafb;
+  padding: 20px;
+  margin-top: $headerHeight;
+}

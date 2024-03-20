@@ -1,0 +1,14 @@
+@import "../../../assets/scss/bundle.scss";
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-orange-600;
+  &__text {
+    @include Typography($font-size-2, 400, $color-white);
+  }
+}

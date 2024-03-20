@@ -1,0 +1,20 @@
+@import "../../../../../assets/scss/bundle.scss";
+
+.registration-form {
+  margin-top: 15px;
+
+  &__sign-in {
+    text-align: center;
+  }
+  .MuiTextField-root {
+    margin-top: 8px;
+    @include DesktopLarge {
+      margin-top: 10px;
+    }
+  }
+
+  @include AuthButton;
+  .MuiButtonBase-root {
+    margin-top: 25px;
+  }
+}

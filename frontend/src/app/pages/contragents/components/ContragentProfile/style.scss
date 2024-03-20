@@ -1,0 +1,27 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.contragent-profile {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 20px;
+
+  .data-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    h6 {
+      @include Typography($font-size-4, 600, $color-black);
+    }
+
+    .MuiTypography-body1 {
+      @include Typography($font-size-3, 500, $color-gray-500);
+    }
+
+    .MuiTypography-body2 {
+      @include Typography($font-size-4, 500, $color-gray-500);
+    }
+  }
+}

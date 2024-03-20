@@ -1,0 +1,40 @@
+@import "../../../../assets/scss/bundle.scss";
+
+.base-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  height: $headerHeight;
+  background-color: white;
+  border-bottom: 1px solid $color-gray-200;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__logo {
+    width: 140px;
+  }
+
+  &__lang {
+    height: 40px;
+    .label {
+      left: 360px;
+    }
+    .MuiOutlinedInput-notchedOutline {
+      border-width: 1px !important;
+      border-color: $color-gray-300 !important;
+      border-radius: $border-radius;
+    }
+
+    .Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: $color-orange-400 !important;
+    }
+  }
+
+  .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    left: calc(100vw * 0.3 - 190px) !important;
+  }
+}

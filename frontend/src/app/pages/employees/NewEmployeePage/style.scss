@@ -1,0 +1,28 @@
+@import "../../../assets/scss/bundle.scss";
+
+.new-employee-page {
+  @include Form;
+
+  .roles-box {
+    width: 75%;
+    max-width: 600px;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .employee-rights {
+    font-size: 12px;
+
+    p {
+      @include Typography($font-size-5, 500, $color-gray-700);
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      color: $color-green;
+    }
+  }
+}

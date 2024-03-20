@@ -1,0 +1,14 @@
+@import "../../../assets/scss/bundle.scss";
+
+.footer {
+  padding: 24px 40px;
+  color: $color-gray-500;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  a {
+    color: $color-link;
+  }
+}

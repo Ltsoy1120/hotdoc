@@ -1,0 +1,17 @@
+@import "../../../assets/scss/bundle.scss";
+
+.select {
+  width: 100%;
+  border-radius: $border-radius;
+  background-color: $color-white;
+
+  .MuiSelect-select {
+    box-sizing: border-box;
+    padding: 8.5px 14px;
+  }
+
+  em {
+    font-style: normal;
+    color: #c9c0bd;
+  }
+}

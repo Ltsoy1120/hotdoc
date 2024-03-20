@@ -1,0 +1,21 @@
+@import "../../assets/scss/bundle.scss";
+
+.auth-layout {
+  display: flex;
+  justify-content: space-between;
+  .auth {
+    min-width: 400px;
+    max-width: 440px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    &-page {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin-top: 65px;
+      margin-bottom: 100px;
+      overflow-y: scroll;
+    }
+  }
+}
